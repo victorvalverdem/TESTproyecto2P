@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="432.0" prefWidth="629.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.vmvm.appcopadelmundo.InicioController">
+   <children>
+      <HBox alignment="CENTER" prefHeight="98.0" prefWidth="630.0" spacing="30.0">
+         <children>
+            <Label prefHeight="50.0" prefWidth="437.0" text="Copa Mundial de la FIFA BRASIL 2014">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="92.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@2014WorldCupLogo.jpg" />
+               </image>
+               <HBox.margin>
+                  <Insets top="10.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="226.0" prefWidth="630.0">
+         <children>
+            <ImageView fitHeight="230.0" fitWidth="416.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@2014WorldCupHomeBanner.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="126.0" prefWidth="630.0" spacing="100.0">
+         <children>
+            <Button fx:id="btnConsultaPartidos" mnemonicParsing="false" onAction="#consultarPartidos" text="Consulta de partidos" />
+            <Button fx:id="btnConsultaCopa" mnemonicParsing="false" onAction="#consultarCopasMundiales" text="Consulta de Copas Mundiales" />
+         </children>
+      </HBox>
+   </children>
+</VBox>
